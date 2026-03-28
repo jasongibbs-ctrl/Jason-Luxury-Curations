@@ -37,17 +37,6 @@
       padding: 20px;
     }
 
-    .hero img {
-      width: 250px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      transition: transform 0.5s ease;
-    }
-
-    .hero img:hover {
-      transform: scale(1.05);
-    }
-
     .about {
       max-width: 600px;
       text-align: center;
@@ -61,6 +50,21 @@
     .about.show {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    .about-photo {
+      display: block;
+      width: min(280px, 85vw);
+      max-height: 380px;
+      margin: 0 auto 28px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+      transition: transform 0.5s ease;
+    }
+
+    .about-photo:hover {
+      transform: scale(1.03);
     }
 
     .brands {
@@ -110,9 +114,15 @@
 </header>
 
 <section class="hero">
-  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQEhIVFRUVFRcVFRUVFRUVFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFS0dFR0tKy0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tN//AABEIAKAAoAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABQYHBAMCAf/EADwQAAEDAgMFBQUGBQMFAQAAAAEAAhEDBBIhMUFRBWFxgZGhsdHwI0JS0fAUUmLh8RZCU5LhM2Jygv/EABkBAQADAQEAAAAAAAAAAAAAAAABAwQCBf/EACsRAAICAQQBAwMCBQUAAAAAAAABAhEDBBIhMQUTUWEFUfAigaGxQmFx8P/aAAwDAQACEQMRAD8A9XQoooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA//2Q==" alt="Jason" title="Inline embedded Jason image">
-
   <div class="about" id="about">
+    <img
+      class="about-photo"
+      src="assets/jason.png"
+      alt="Jason"
+      width="280"
+      height="350"
+      loading="lazy"
+    >
     <p>
       I’ve been in the retail business for over 10 years, building my eye for quality, style, and what people really want.  
       My goal is to curate luxury streetwear and make it accessible by reselling pieces at a fraction of the price.  
